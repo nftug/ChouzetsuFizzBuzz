@@ -1,5 +1,4 @@
-﻿
-namespace FizzBuzz.Core;
+﻿namespace FizzBuzz.Core;
 
 public class NumberConverter
 {

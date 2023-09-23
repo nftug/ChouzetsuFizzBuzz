@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FizzBuzz.Core\FizzBuzz.Core.csproj" />
+    <ProjectReference Include="..\FizzBuzz\FizzBuzz.csproj" />
   </ItemGroup>
 
 </Project>

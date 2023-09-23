@@ -1,4 +1,6 @@
-namespace FizzBuzz.Core.Specs;
+using FizzBuzz.Core;
+
+namespace FizzBuzz.Specs;
 
 public class PassThroughRule : IReplaceRule
 {

@@ -1,6 +1,7 @@
-using FizzBuzz.Core.Specs;
+using FizzBuzz.Core;
+using FizzBuzz.Specs;
 
-namespace FizzBuzz.Core.Tests;
+namespace FizzBuzz.Tests.UseCase;
 
 public class FizzBuzzTest
 {

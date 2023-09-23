@@ -1,4 +1,6 @@
-namespace FizzBuzz.Core.Tests;
+using FizzBuzz.Core;
+
+namespace FizzBuzz.Tests.Core;
 
 public class NumberConverterTest
 {
