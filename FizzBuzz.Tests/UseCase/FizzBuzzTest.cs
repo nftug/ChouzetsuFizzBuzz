@@ -8,12 +8,12 @@ public class FizzBuzzTest
     [Fact]
     public void TestFizzBuzz()
     {
-        var fizzBuzz = new NumberConverter(new IReplaceRule[]
-        {
-            new CyclicNumberRule(3, "Fizz"),
-            new CyclicNumberRule(5, "Buzz"),
-            new PassThroughRule()
-        });
+        var fizzBuzz = new NumberConverter(
+            new IReplaceRule[] {
+                new CyclicNumberRule(3, "Fizz"),
+                new CyclicNumberRule(5, "Buzz"),
+                new PassThroughRule()
+            });
 
         fizzBuzz.Convert(1).Should().Be("1");
         fizzBuzz.Convert(2).Should().Be("2");

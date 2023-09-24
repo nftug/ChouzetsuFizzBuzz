@@ -1,12 +1,12 @@
 ﻿namespace FizzBuzz.Core;
 
-public class NumberConverter
+public class NumberConverter : INumberConverter
 {
     private readonly IReplaceRule[] _rules;
 
-    public NumberConverter(IReplaceRule[] rules)
+    public NumberConverter(IEnumerable<IReplaceRule> rules)
     {
-        _rules = rules;
+        _rules = rules.ToArray();
     }
 
     public string Convert(int n) =>
