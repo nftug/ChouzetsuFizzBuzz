@@ -1,5 +1,5 @@
-using FizzBuzz.Core;
-using FizzBuzz.Specs;
+using FizzBuzz.Domain.Core;
+using FizzBuzz.Domain.Specs;
 
 namespace FizzBuzz.Tests.UseCase;
 

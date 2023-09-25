@@ -1,17 +1,26 @@
 using FizzBuzz.Application.Services;
-using FizzBuzz.Core;
-using FizzBuzz.Specs;
+using FizzBuzz.Domain.Core;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddFizzBuzz(this IServiceCollection services) =>
-        services
-            .AddSingleton<IReplaceRule>(_ => new CyclicNumberRule(3, "Fizz"))
-            .AddSingleton<IReplaceRule>(_ => new CyclicNumberRule(5, "Buzz"))
-            .AddSingleton<IReplaceRule>(_ => new PassThroughRule())
+    public static IServiceCollection AddFizzBuzz(
+        this IServiceCollection services,
+        params IReplaceRule[] rules
+    )
+    {
+        services = services
             .AddSingleton<INumberConverter, NumberConverter>()
             .AddSingleton<IOutput, ConsoleOutput>()
             .AddSingleton<FizzBuzzSequencePrinter>();
+
+        foreach (var rule in rules)
+        {
+            services.AddSingleton(_ => rule);
+        }
+
+        return services;
+    }
+
 }

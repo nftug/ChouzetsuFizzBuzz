@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FizzBuzz\FizzBuzz.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Domain\FizzBuzz.Domain.csproj" />
     <ProjectReference Include="..\FizzBuzz.Application\FizzBuzz.Application.csproj" />
   </ItemGroup>
 

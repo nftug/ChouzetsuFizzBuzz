@@ -1,6 +1,6 @@
-using FizzBuzz.Core;
+using FizzBuzz.Domain.Core;
 
-namespace FizzBuzz.Specs;
+namespace FizzBuzz.Domain.Specs;
 
 public class CyclicNumberRule : IReplaceRule
 {

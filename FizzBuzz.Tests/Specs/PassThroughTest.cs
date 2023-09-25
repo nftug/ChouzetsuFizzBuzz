@@ -1,4 +1,4 @@
-using FizzBuzz.Specs;
+using FizzBuzz.Domain.Specs;
 
 namespace FizzBuzz.Core.Tests.Specs;
 

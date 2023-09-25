@@ -1,4 +1,4 @@
-namespace FizzBuzz.Core;
+namespace FizzBuzz.Domain.Core;
 
 public interface IReplaceRule
 {

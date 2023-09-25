@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\FizzBuzz\FizzBuzz.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Domain\FizzBuzz.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
